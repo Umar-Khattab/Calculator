@@ -19,7 +19,6 @@ namespace Calculator
             if (Output.Text == "0" || isOperator)
             {
                 Output.Text = "";
-                OutputTracker.Text += Output.Text;
             }
 
             if (num.Text == ".")
@@ -71,7 +70,7 @@ namespace Calculator
                 default:
                     break;
             }
-            OutputTracker.Text = "";
+            OutputTracker.Text = Output.Text;
 
         }
 
